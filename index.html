@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TFJS predict!</title>
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Predict your handwritten 0-9
+      </h1>
+      <h4>
+        By Bertram
+      </h4>
+    </header>
+  
+    <p id="test">
+      hi
+    </p>
+    <div>
+      <div>
+        <div id="sketch">
+        <canvas id="paint"></canvas>
+      </div>
+      <h3 id="prediction"> 
+      </h3>
+      <button id="predict" onclick="predict()">
+        Predict!
+      </button>
+      <button id="clear" onclick="clearCanvas()">
+        Clear...
+      </button>
+      </div>
+      
+      <div>
+        <canvas id="myChart" width="350" height="350"></canvas>
+      </div>
+    </div>
+  
+  </body>
+  <script src="client.js"></script>
+</html>
+
